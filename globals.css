@@ -1,0 +1,56 @@
+/* ============================================================
+   MAURITANIA — globals.css
+   Flag: dark green + gold crescent & star
+   Primary: Mauritanian gold  Secondary: flag green
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* === MAURITANIA — SWAP THESE === */
+  --primary:        #C9A227;
+  --primary-hover:  #DABB3A;
+  --primary-bright: #EDD060;
+  --primary-soft:   rgba(201,162,39,0.10);
+  --primary-strong: #F5E09A;
+  --on-primary:     #1a0f00;
+  --secondary:      #1B6B2E; /* Mauritania flag green */
+
+  /* === NEVER CHANGE THESE === */
+  --bg:               #050806;
+  --surface:          rgba(255,255,255,0.035);
+  --surface-accent:   rgba(255,255,255,0.06);
+  --surface-strong:   rgba(255,255,255,0.08);
+
+  --foreground:       #F5F7F4;
+  --foreground-muted: rgba(255,255,255,0.60);
+  --foreground-soft:  rgba(255,255,255,0.40);
+
+  --border:           rgba(255,255,255,0.08);
+  --border-strong:    rgba(255,255,255,0.14);
+  --border-soft:      rgba(255,255,255,0.06);
+
+  --shadow-card:   0 18px 44px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.04);
+  --shadow-hero:   0 28px 80px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.04);
+  --shadow-medium: 0 24px 60px rgba(0,0,0,0.26);
+  --shadow-strong: 0 28px 80px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.04);
+
+  --grid-line:     rgba(255,255,255,0.06);
+  --header-height: 64px;
+}
+
+/* ── Typography ───────────────────────────────────────────── */
+.lp-hero-title    { font-size:clamp(1.9rem,5vw,4.2rem);  font-weight:900; line-height:0.96; letter-spacing:-0.055em; }
+.lp-section-title { font-size:clamp(1.6rem,3.5vw,3rem);  font-weight:900; line-height:0.96; letter-spacing:-0.04em;  }
+.lp-card-title    { font-size:clamp(1.1rem,2vw,1.5rem);  font-weight:800; line-height:1.1;  letter-spacing:-0.03em;  }
+.lp-eyebrow       { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.28em; }
+.lp-body          { font-size:clamp(0.95rem,1.4vw,1.1rem); line-height:1.7; }
+.lp-body-sm       { font-size:0.875rem; line-height:1.65; }
+.lp-button        { font-size:0.875rem; font-weight:700; letter-spacing:0.06em; }
+
+.glow-primary {
+  color: var(--primary);
+  text-shadow: 0 0 28px rgba(201,162,39,0.50), 0 0 60px rgba(201,162,39,0.25);
+}
